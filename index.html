@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0f17" />
+  <meta name="description" content="AdPriori — Support and Privacy Policy. Offline marketing ROI modeling tool." />
+
+  <title>AdPriori — Support & Privacy Policy</title>
+
+  <!-- Premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #070a10;
+      --panel: rgba(255,255,255,0.06);
+      --panel2: rgba(255,255,255,0.04);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.68);
+      --soft: rgba(255,255,255,0.12);
+      --gold: #d6b35d;
+      --gold2:#f1d58a;
+      --danger:#ff6b6b;
+      --ok:#53d38a;
+
+      --radius: 18px;
+      --shadow: 0 20px 70px rgba(0,0,0,0.55);
+      --shadow2: 0 10px 30px rgba(0,0,0,0.35);
+      --max: 1040px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(214,179,93,0.18), transparent 60%),
+        radial-gradient(900px 500px at 80% 15%, rgba(241,213,138,0.10), transparent 55%),
+        radial-gradient(900px 500px at 45% 90%, rgba(83,211,138,0.08), transparent 55%),
+        linear-gradient(180deg, #060812 0%, #070a10 40%, #05060a 100%);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height:1.55;
+      letter-spacing: 0.2px;
+    }
+
+    a{ color:var(--gold2); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width: 260px;
+    }
+
+    .logo{
+      width: 44px; height: 44px;
+      border-radius: 14px;
+      background:
+        radial-gradient(18px 18px at 28% 28%, rgba(255,255,255,0.35), transparent 60%),
+        linear-gradient(135deg, rgba(214,179,93,0.95), rgba(241,213,138,0.55));
+      box-shadow: 0 10px 25px rgba(214,179,93,0.18);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .brand-title{
+      display:flex; flex-direction:column;
+      gap:2px;
+    }
+
+    .brand-title strong{
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.4px;
+    }
+
+    .brand-title span{
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
+    .nav{
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .chip{
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.88);
+      font-size: 13px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+    .chip:hover{
+      background: rgba(255,255,255,0.09);
+      text-decoration:none;
+    }
+
+    .hero{
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow: var(--shadow);
+      padding: 26px 22px;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(500px 220px at 10% 0%, rgba(214,179,93,0.22), transparent 60%),
+        radial-gradient(420px 220px at 85% 0%, rgba(241,213,138,0.16), transparent 60%);
+      pointer-events:none;
+      filter: blur(2px);
+      opacity: 0.9;
+    }
+
+    .hero-inner{
+      position:relative;
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      align-items:start;
+    }
+
+    @media (max-width: 860px){
+      .hero-inner{ grid-template-columns: 1fr; }
+      .brand{ min-width: unset; }
+    }
+
+    h1{
+      margin: 0 0 8px;
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      line-height: 1.05;
+      letter-spacing: 0.6px;
+    }
+
+    .subtitle{
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0 0 18px;
+      max-width: 60ch;
+    }
+
+    .pillrow{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .pill{
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(0,0,0,0.18);
+      color: rgba(255,255,255,0.85);
+      font-size: 12.5px;
+    }
+
+    .card{
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.055);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: var(--shadow2);
+      padding: 18px 16px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card h3{
+      margin: 0 0 10px;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .kv{
+      display:grid;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .kv div{
+      display:flex;
+      justify-content:space-between;
+      gap: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.10);
+      padding-bottom: 8px;
+    }
+
+    .kv div:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    .kv b{ color: rgba(255,255,255,0.78); font-weight: 600; }
+    .kv span{ color: rgba(255,255,255,0.92); text-align:right; }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 860px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+
+    .section{
+      margin-top: 18px;
+      padding-top: 14px;
+    }
+
+    .section h2{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+    }
+
+    .section p, .section li{
+      color: rgba(255,255,255,0.80);
+      font-size: 14px;
+    }
+
+    .notice{
+      border-left: 3px solid var(--gold);
+      padding: 10px 12px;
+      background: rgba(214,179,93,0.08);
+      border-radius: 12px;
+      color: rgba(255,255,255,0.82);
+      font-size: 13.5px;
+      margin: 12px 0;
+    }
+
+    .faq{
+      margin-top: 10px;
+      display:grid;
+      gap: 10px;
+    }
+
+    details{
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.045);
+      padding: 12px 12px;
+    }
+
+    summary{
+      cursor:pointer;
+      font-weight: 600;
+      color: rgba(255,255,255,0.90);
+      list-style:none;
+    }
+    summary::-webkit-details-marker{ display:none; }
+
+    .meta{
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 14px;
+    }
+
+    .footer{
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.10);
+      color: rgba(255,255,255,0.62);
+      font-size: 12.5px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap: 10px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(214,179,93,0.95), rgba(241,213,138,0.70));
+      color: #0b0f17;
+      font-weight: 700;
+      border: 1px solid rgba(255,255,255,0.16);
+      box-shadow: 0 18px 45px rgba(214,179,93,0.20);
+      text-decoration:none;
+    }
+    .btn:hover{ text-decoration:none; filter: brightness(1.03); }
+
+    .small{
+      font-size: 12.5px;
+      color: rgba(255,255,255,0.72);
+    }
+
+    .tag{
+      display:inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(0,0,0,0.18);
+      color: rgba(255,255,255,0.78);
+      font-size: 12px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    .status{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: rgba(255,255,255,0.78);
+      margin-top: 8px;
+    }
+    .dot{
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--ok);
+      box-shadow: 0 0 0 4px rgba(83,211,138,0.12);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>AdPriori</strong>
+          <span>Support & Privacy Policy</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Quick navigation">
+        <a class="chip" href="#support">Support</a>
+        <a class="chip" href="#privacy">Privacy</a>
+        <a class="chip" href="#faq">FAQ</a>
+        <a class="chip" href="#about">About</a>
+      </nav>
+    </div>
+
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <div>
+          <h1>Model ROI before you spend.</h1>
+          <p class="subtitle">
+            Every dollar spent on ads carries risk. You set a budget, pick a platform, launch a campaign — and then wait,
+            hoping the numbers move in your favor. But hope isn’t a strategy.
+            <br><br>
+            <b>AdPriori</b> is built for the moment <i>before</i> you allocate budget. It’s a private, offline modeling tool that simulates
+            the full economics of a digital advertising campaign — from impressions to revenue, from CPC to net profit —
+            before a single dollar leaves your account.
+          </p>
+
+          <a class="btn" href="mailto:polina.dorofeeva933@gmail.com?subject=AdPriori%20Support%20Request">
+            Contact Support
+            <span aria-hidden="true">→</span>
+          </a>
+
+          <div class="pillrow" aria-label="Highlights">
+            <span class="pill">Offline ROI modeling</span>
+            <span class="pill">Break-even & max CPC</span>
+            <span class="pill">Profit & ROAS visibility</span>
+            <span class="pill">Fast what-if analysis</span>
+          </div>
+
+          <div class="status"><span class="dot" aria-hidden="true"></span><span>Typical response time: 24–72 hours</span></div>
+        </div>
+
+        <aside class="card" aria-label="App information">
+          <h3>App Details</h3>
+          <div class="kv">
+            <div><b>App</b><span>AdPriori</span></div>
+            <div><b>Developer</b><span>Polina Dorosh</span></div>
+            <div><b>Support Email</b><span><a href="mailto:polina.dorofeeva933@gmail.com">polina.dorofeeva933@gmail.com</a></span></div>
+          </div>
+
+          <div class="notice" role="note">
+            AdPriori helps you make data-driven decisions by calculating key marketing unit-economics in real time as you adjust inputs.
+          </div>
+
+          <p class="small" style="margin:0;">
+            This page is intended for App Store Support URL and Privacy Policy URL.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card section" id="support">
+        <h2>Support</h2>
+        <p>
+          If you have questions, feedback, or need help with AdPriori, contact us by email:
+          <b><a href="mailto:polina.dorofeeva933@gmail.com">polina.dorofeeva933@gmail.com</a></b>.
+        </p>
+
+        <ul>
+          <li>Include your device model and iOS version.</li>
+          <li>Describe the issue and the steps to reproduce it.</li>
+          <li>If relevant, attach screenshots (no sensitive data).</li>
+        </ul>
+
+        <div class="notice">
+          We do not provide financial or legal advice. AdPriori is a modeling tool to help you estimate outcomes based on the assumptions you enter.
+        </div>
+
+        <p class="small">
+          Developer: <b>Polina Dorosh</b> • App: <b>AdPriori</b>
+        </p>
+      </section>
+
+      <section class="card section" id="about">
+        <h2>About AdPriori</h2>
+        <p>
+          The idea is simple: you enter known or assumed parameters — budget, CPM, expected click-through and conversion rates,
+          average order value — and the system calculates the rest.
+        </p>
+        <p>
+          Not only the obvious metrics, but the ones that actually determine whether your campaign succeeds or fails:
+          <b>maximum profitable CPC</b>, <b>break-even point</b>, <b>profit per ad dollar</b>,
+          and whether your unit economics can support scaling.
+          You see results instantly, in real time, as you adjust any variable.
+        </p>
+
+        <div class="notice">
+          Reminder: outputs depend entirely on your inputs. Use conservative assumptions when planning budget.
+        </div>
+      </section>
+    </div>
+
+    <section class="card section" id="privacy">
+      <h2>Privacy Policy <span class="tag">Last updated: 2026-02-16</span></h2>
+
+      <p>
+        This Privacy Policy explains how <b>AdPriori</b> (“the App”) handles information. The App is developed by
+        <b>Polina Dorosh</b> (“we”, “us”).
+      </p>
+
+      <h3 style="margin:14px 0 8px;">1. Data We Collect</h3>
+      <p>
+        AdPriori is designed to work as an offline modeling tool. By default, we do not require you to create an account.
+      </p>
+      <ul>
+        <li><b>Information you enter:</b> campaign assumptions (e.g., budget, CPM, CTR, conversion rate, AOV). This is used to calculate results inside the App.</li>
+        <li><b>Support email:</b> if you contact us, we will receive your email address and the content of your message.</li>
+      </ul>
+
+      <h3 style="margin:14px 0 8px;">2. How We Use Data</h3>
+      <ul>
+        <li>To provide the App’s calculations and features.</li>
+        <li>To respond to support requests and improve the App based on feedback.</li>
+        <li>To comply with applicable laws, if required.</li>
+      </ul>
+
+      <h3 style="margin:14px 0 8px;">3. Data Storage</h3>
+      <p>
+        The App is intended to keep your modeling inputs locally on your device (e.g., for convenience and continuity).
+        If you delete the App, locally stored data may be removed by your device’s OS.
+      </p>
+
+      <h3 style="margin:14px 0 8px;">4. Sharing</h3>
+      <p>
+        We do not sell your personal information. We do not share your inputs unless you choose to share them (for example, by sending screenshots or emailing support).
+      </p>
+
+      <h3 style="margin:14px 0 8px;">5. Security</h3>
+      <p>
+        We take reasonable measures to protect information associated with support communications. However, no method of transmission or storage is 100% secure.
+      </p>
+
+      <h3 style="margin:14px 0 8px;">6. Children</h3>
+      <p>
+        AdPriori is not intended for children under 13. If you believe a child has provided personal information, contact us and we will address it.
+      </p>
+
+      <h3 style="margin:14px 0 8px;">7. Your Rights</h3>
+      <p>
+        You may contact us to request access, correction, or deletion of information related to support messages you sent us.
+        Email: <b><a href="mailto:polina.dorofeeva933@gmail.com">polina.dorofeeva933@gmail.com</a></b>.
+      </p>
+
+      <h3 style="margin:14px 0 8px;">8. Changes to This Policy</h3>
+      <p>
+        We may update this Policy from time to time. The “Last updated” date above reflects the latest revision.
+      </p>
+
+      <h3 style="margin:14px 0 8px;">9. Contact</h3>
+      <p>
+        Developer: <b>Polina Dorosh</b><br>
+        App: <b>AdPriori</b><br>
+        Email: <b><a href="mailto:polina.dorofeeva933@gmail.com">polina.dorofeeva933@gmail.com</a></b>
+      </p>
+    </section>
+
+    <section class="card section" id="faq">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>Does AdPriori guarantee profit?</summary>
+          <p>
+            No. AdPriori estimates outcomes based on the assumptions you enter. Real performance can differ due to auction dynamics,
+            creative fatigue, attribution, tracking gaps, and market changes.
+          </p>
+        </details>
+
+        <details>
+          <summary>What inputs should I start with?</summary>
+          <p>
+            Start with conservative estimates for CPM, CTR, CVR, and AOV. If you have historical data from past campaigns,
+            use medians (not best-case results).
+          </p>
+        </details>
+
+        <details>
+          <summary>I found a bug or wrong calculation — what should I send?</summary>
+          <p>
+            Please email us with: your iOS version, steps to reproduce, and screenshots of your inputs and results.
+            Avoid including any sensitive information.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I request deletion of my data?</summary>
+          <p>
+            If you only use the App offline, your data stays on your device. For support emails, contact us and we can delete related correspondence.
+          </p>
+        </details>
+      </div>
+
+      <div class="meta">
+        <span>© <span id="y"></span> Polina Dorosh</span>
+        <span>•</span>
+        <span><a href="#top">Back to top</a></span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <b>AdPriori</b> — Support & Privacy Policy
+      </div>
+      <div>
+        Contact: <a href="mailto:polina.dorofeeva933@gmail.com">polina.dorofeeva933@gmail.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set year
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
